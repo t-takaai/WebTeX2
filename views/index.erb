@@ -7,30 +7,27 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Test</h1>
+		<h1>WebTeX</h1>
   	<div class="submit">
-			<form method="post" id="ex-form" action="/" enctype="multipart/form-data">
-				<div class="form-text">
-					<textarea name="ex_text" id="ex-text"></textarea>
-				</div>
+      <form method="post" id="ex-form" action="/" enctype="multipart/form-data">
 				<div class="form-file">
 					<input type="file" name="file">
 				</div>
 				<div class="form-submit">
-					<input type="submit" name="submit" value="submit">
+          <input type="submit" name="submit" value="Upload">
 				</div>
 			</form>
 		</div>
-		<% posts.each do |post| %>
+		<!-- <% posts.each do |post| %>
 			<div class="post">
 				<div class="post-text">
 					<%= escape_html post["text"] %>
 				</div>
-				<dvi class="post-image">
-					<img src="/uploads/<%= post["img_file_name"] %>" alt="<% post["img_file_name"] %>" class="ex-image">
+				<dvi class="post-source">
+					<img src="/uploads/<%= post["file_name"] %>" alt="<% post["file_name"] %>" class="ex-source">
 				</dvi>
 			</div>
-		<% end  %>
+		<% end  %> -->
 	</div>
 	<script src="/js/main.js"></script>
 </body>
